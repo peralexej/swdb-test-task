@@ -82,6 +82,7 @@ public class LoanCalculatorTestSteps extends CalculatorView {
     public void calculationResultEqualTo(DataTable dataTable) {
         CalcResult result = CalcResult.convert(dataTable);
         assertEquals(result.monthlyPayment, monthlyPaymentResult.getText());
+        assertEquals(result.maxLoanAmount, maxLoanAmountResult.getText());
     }
 
 }
